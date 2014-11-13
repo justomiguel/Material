@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- your app branding color for the new app Toolbar -->
+    <color name="colorPrimary">#9933FF</color>		
+    <!-- darker variant for the status bar and contextual app bars.
+    	 By default, android:statusBarColor inherits the value of android:colorPrimaryDark. -->
+    <color name="colorPrimaryDark">#7A29CC</color>	
+    <!-- theme UI controls like checkboxes and text fields and other views -->
+    <color name="colorAccent">#FF0066</color>		
+    <color name="background">#FFFFFF</color>	
+</resources>
+    
