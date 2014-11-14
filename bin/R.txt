@@ -289,7 +289,6 @@ int dimen dialog_fixed_width_major 0x7f07000c
 int dimen dialog_fixed_width_minor 0x7f07000d
 int dimen disabled_alpha_material_dark 0x7f070001
 int dimen disabled_alpha_material_light 0x7f070000
-int dimen toolbar_height 0x7f07002d
 int drawable abc_ab_share_pack_holo_dark 0x7f020000
 int drawable abc_ab_share_pack_holo_light 0x7f020001
 int drawable abc_btn_check_material 0x7f020002
@@ -350,14 +349,14 @@ int id action_bar_spinner 0x7f090002
 int id action_bar_subtitle 0x7f090021
 int id action_bar_title 0x7f090020
 int id action_context_bar 0x7f090034
-int id action_info 0x7f090045
-int id action_item 0x7f090044
+int id action_info 0x7f090046
+int id action_item 0x7f090045
 int id action_menu_divider 0x7f090005
 int id action_menu_presenter 0x7f090006
 int id action_mode_bar 0x7f090030
 int id action_mode_bar_stub 0x7f09002f
 int id action_mode_close_button 0x7f090022
-int id action_settings 0x7f090043
+int id action_settings 0x7f090044
 int id activity_chooser_view_content 0x7f090023
 int id always 0x7f090014
 int id beginning 0x7f09001b
@@ -380,6 +379,7 @@ int id ifRoom 0x7f090016
 int id image 0x7f090025
 int id listMode 0x7f09000a
 int id list_item 0x7f090027
+int id main_menu 0x7f090043
 int id middle 0x7f09001d
 int id never 0x7f090017
 int id none 0x7f09000f
@@ -459,9 +459,8 @@ int string action_item 0x7f0a0011
 int string action_settings 0x7f0a0010
 int string app_name 0x7f0a000f
 int string textView 0x7f0a0013
-int style AppBaseTheme 0x7f0b00ef
+int style AppBaseTheme 0x7f0b00ee
 int style AppTheme 0x7f0b00eb
-int style AppTheme_ActionMode 0x7f0b00ed
 int style Base_TextAppearance_AppCompat 0x7f0b0098
 int style Base_TextAppearance_AppCompat_Body1 0x7f0b00a3
 int style Base_TextAppearance_AppCompat_Body2 0x7f0b00a2
@@ -698,7 +697,7 @@ int style Widget_AppCompat_Spinner_DropDown 0x7f0b001b
 int style Widget_AppCompat_Spinner_DropDown_ActionBar 0x7f0b001c
 int style Widget_AppCompat_Toolbar 0x7f0b0034
 int style Widget_AppCompat_Toolbar_Button_Navigation 0x7f0b0035
-int style optionMenu 0x7f0b00ee
+int style optionMenu 0x7f0b00ed
 int[] styleable ActionBar { 0x7f010000, 0x7f010001, 0x7f01002c, 0x7f010055, 0x7f010056, 0x7f010057, 0x7f010058, 0x7f010059, 0x7f01005a, 0x7f01005b, 0x7f01005c, 0x7f01005d, 0x7f01005e, 0x7f01005f, 0x7f010060, 0x7f010061, 0x7f010062, 0x7f010063, 0x7f010064, 0x7f010065, 0x7f010066, 0x7f010067, 0x7f010068, 0x7f010069, 0x7f01006a, 0x7f01006b, 0x7f01006c }
 int styleable ActionBar_background 11
 int styleable ActionBar_backgroundSplit 13

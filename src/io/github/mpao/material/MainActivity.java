@@ -26,31 +26,71 @@
  *******************************************************************************/
 package io.github.mpao.material;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.KeyEvent;
+import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
+	
+	private Toolbar toolbar;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        if (toolbar != null) {
+        	setSupportActionBar(toolbar);
+        }      
+    }
 
-	@Override
-	public void onCreate(Bundle savedInstanceState) {
-	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.activity_main);
-
-	    Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-
-	    // Set an OnMenuItemClickListener to handle menu item clicks
-	    toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-	        @Override
-	        public boolean onMenuItemClick(MenuItem item) {
-	            // Handle the menu item
-	            return true;
-	        }
-	    });
-	 // Inflate a title to be displayed in the toolbar
-	    toolbar.setTitle(R.string.app_name);
-	    // Inflate a menu to be displayed in the toolbar
-	    toolbar.inflateMenu(R.menu.main);
-	}
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+    	/* il caro vecchio pulsante hardware conosciuto come three dot menu. 
+    	 * Il giorno che ci abbandonerà, non sarà mai troppo presto! Questo è 
+    	 * un workaroud per intercettare che è stato premuto ed utilizzare i
+    	 * metodi di Toolbar per visualizzare il menu overflow */
+    	if(keyCode == KeyEvent.KEYCODE_MENU){
+    		// se è l'odiato bottone, mostra l'overflow menù della toolbar
+    		toolbar.showOverflowMenu();
+    		/* e ritorna true. in tal modo non mostro il menù che il pulsante
+    		 * avrebbe voluto mostrare, cioè l'overflow in basso */
+    		return true;  
+    	}
+    	// per qualunque altro pulsante, fa il return corretto
+    	return super.onKeyDown(keyCode, event);
+    }
+ 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here.
+        switch (item.getItemId()) {
+        	case R.id.action_settings:
+        		doSomething("Settings");
+        		return true;
+        	case R.id.action_item:
+        		doSomething("Another Item");
+        		return true;
+        	case R.id.action_info:
+        		doSomething("Info");
+        		return true;        		
+        	default:
+            return super.onOptionsItemSelected(item);
+        }        
+    }
+    // metodo pro dimostrazione
+    public void doSomething(String string){
+        Toast.makeText(this, string, Toast.LENGTH_LONG).show();
+    }
 }
+

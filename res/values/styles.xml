@@ -11,9 +11,11 @@
 		<item name="android:windowNoTitle">true</item>
         <item name="windowActionBar">false</item>   
         <!-- l'action mode (seleziona, copia e incolla...) sovrascrive la toolbar -->  
-		<item name="android:windowActionModeOverlay">true</item>
-    	<item name="android:actionModeStyle">@style/AppTheme.ActionMode</item>
+		<item name="windowActionModeOverlay">true</item>
+		<item name="actionModeBackground">@color/colorPrimary</item>
+		
 	</style>
+	
 	<style name="ToolbarText">
 	    <!-- i colori del testo della toolbar posso anche metterli nello stile principale, ma in tal caso,
 	    cambiano anche i colori del menù opzioni che prende lo stile dal tema genitore (Theme.AppCompat.Light) 
@@ -27,20 +29,15 @@
   		<!-- This is the  color of the title text in the Toolbar, in the Theme.AppCompat.Light theme:  -->
   		<!-- <item name="android:textColorPrimaryInverse">@color/textToolbar</item>  -->  	    
 	</style>
-	<style name="AppTheme.ActionMode">
-	    <item name="android:background">@color/colorPrimary</item>
-	    <item name="android:height">@dimen/toolbar_height</item>
-	    <!-- <item name="android:backgroundSplit">?android:attr/actionModeSplitBackground</item>  -->
-	    <item name="titleTextAppearance">@style/ToolbarText</item>
-	    <item name="android:subtitleTextStyle">@color/textToolbar</item>
-	</style>	
 
 	<style name="optionMenu">
 	     <!-- Three dots menù style. Per coerenza grafica non dovrei applicarci uno stile ma utilizzare
 	     quello ereditato dal genitore, ma per i telefoni moderni forse un filo di bellezza in più non guasta.
-		 Rimane da sistemare, il background che rimane solo per il testo e non per la casella -->
-	    <item name="android:background">@color/menu_background</item>
-	    <item name="android:textColor">@color/menu_text</item>   
+		 Rimane da sistemare, il background che rimane solo per il testo e non per la casella -->    
+	    <item name="android:textColor">@color/menu_text</item>  
+		<item name="android:background">@color/menu_background</item>
+	    
+	     
 	    
 	</style>
 </resources>

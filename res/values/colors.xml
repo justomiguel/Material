@@ -12,7 +12,7 @@
     <!-- Toolbar text color -->		
     <color name="textToolbar">#FFFFFF</color>
     <!-- Three dots menu colors -->
-    <color name="menu_text">#9933FF</color>
-    <color name="menu_background">#FFFFFF</color>
+    <color name="menu_text">#FFFFFF</color>
+    <color name="menu_background">#FF0066</color>
 </resources>
     
