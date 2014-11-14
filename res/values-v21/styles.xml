@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <!-- your theme inherits from the material theme -->
-  <style name="AppTheme" parent="android:Theme.Material">
+	<!-- your theme inherits from the material theme -->
+	<style name="AppTheme" parent="android:Theme.Material.Light">
     	<!-- Main theme colors -->
     	<!--   your app branding color for the app bar -->
 		<item name="android:colorPrimary">@color/colorPrimary</item>
 		<item name="android:colorPrimaryDark">@color/colorPrimary</item>
 		<item name="android:colorAccent">@color/colorAccent</item>
-  </style>
+		<!-- This is the  color of the title text in the Toolbar, in the Theme.Material theme:  -->
+  		<item name="android:textColorPrimary">@color/textToolbar</item>				<!-- TITOLO -->
+  		<item name="android:actionMenuTextColor">@color/textToolbar</item>			<!-- Elementi Action -->
+  		<item name="android:textColorSecondary">@color/textToolbar</item>			<!-- Three dots menu -->
+  		<!-- This is the  color of the title text in the Toolbar, in the Theme.Material.Light theme:  -->
+  		<!-- <item name="android:textColorPrimaryInverse">@color/textToolbar</item>  -->      
+	</style>
+	<style name="optionMenu">
+	     <!-- Three dots menù style -->
+	    <item name="android:background">@color/menu_background</item>
+	    <item name="android:textColor">@color/menu_text</item>
+	</style>
 </resources>
 
 

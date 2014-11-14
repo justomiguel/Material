@@ -6,7 +6,13 @@
     	 By default, android:statusBarColor inherits the value of android:colorPrimaryDark. -->
     <color name="colorPrimaryDark">#7A29CC</color>	
     <!-- theme UI controls like checkboxes and text fields and other views -->
-    <color name="colorAccent">#FF0066</color>		
-    <color name="background">#FFFFFF</color>	
+    <color name="colorAccent">#FF0066</color>
+    <!-- layout background -->
+    <color name="background">#FFFFFF</color>
+    <!-- Toolbar text color -->		
+    <color name="textToolbar">#FFFFFF</color>
+    <!-- Three dots menu colors -->
+    <color name="menu_text">#9933FF</color>
+    <color name="menu_background">#FFFFFF</color>
 </resources>
     
