@@ -7,6 +7,7 @@
     <color name="colorPrimaryDark">#7A29CC</color>	
     <!-- theme UI controls like checkboxes and text fields and other views -->
     <color name="colorAccent">#FF0066</color>
+    <color name="textBlack">#000000</color>
     <!-- layout background -->
     <color name="background">#FFFFFF</color>
     <!-- Toolbar text color -->		

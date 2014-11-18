@@ -5,7 +5,7 @@
     	<!-- theme customizations -->
 		<item name="colorPrimary">@color/colorPrimary</item>
 		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-		<item name="colorAccent">@color/colorAccent</item>
+		<item name="colorAccent">@color/colorAccent</item>		
   		 <!-- You can also set colorControlNormal, colorControlActivated
          colorControlHighlight, and colorSwitchThumbNormal. -->	 		
 		<item name="android:windowNoTitle">true</item>
@@ -30,14 +30,11 @@
   		<!-- <item name="android:textColorPrimaryInverse">@color/textToolbar</item>  -->  	    
 	</style>
 
-	<style name="optionMenu">
+	<style name="optionMenu" parent="Theme.AppCompat.Light.NoActionBar">
 	     <!-- Three dots menù style. Per coerenza grafica non dovrei applicarci uno stile ma utilizzare
 	     quello ereditato dal genitore, ma per i telefoni moderni forse un filo di bellezza in più non guasta.
-		 Rimane da sistemare, il background che rimane solo per il testo e non per la casella -->    
+		 Rimane da sistemare, il background onclick che rimane solo per il testo e non per la casella -->   
 	    <item name="android:textColor">@color/menu_text</item>  
-		<item name="android:background">@color/menu_background</item>
-	    
-	     
-	    
+	    <item name="android:background">@color/menu_background</item>
 	</style>
 </resources>

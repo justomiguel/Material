@@ -32,6 +32,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
@@ -42,9 +43,8 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        if (toolbar != null) {
-        	setSupportActionBar(toolbar);
-        }      
+        setSupportActionBar(toolbar);
+        
     }
 
     @Override
@@ -90,7 +90,13 @@ public class MainActivity extends ActionBarActivity {
     }
     // metodo pro dimostrazione
     public void doSomething(String string){
-        Toast.makeText(this, string, Toast.LENGTH_LONG).show();
+    	// dov'è Snackbar ? www.google.com/design/spec/components/snackbars-toasts.html
+        Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
     }
+    // metodo pro dimostrazione
+    public void moreInfo(View view){
+    	// dov'è Snackbar ? www.google.com/design/spec/components/snackbars-toasts.html
+        Toast.makeText(this, "Maggiori Informazioni", Toast.LENGTH_SHORT).show();
+    }    
 }
 
